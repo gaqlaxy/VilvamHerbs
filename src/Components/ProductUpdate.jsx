@@ -3,11 +3,11 @@ import React from "react";
 export default function ProductUpdate() {
   return (
     <>
-      <div className="flex flex-col items-center gap-12 mt-12 mb-12 h-full">
-        <h1 className="text-3xl font-semibold text-justify">
+      <div className="flex flex-col justify-center items-center gap-12 mt-12 mb-12 h-full">
+        <h1 className="text-3xl font-semibold text-center">
           Heat is often used in the manufacturing process of <br /> conventional
           skincare products. However this can <br />
-          dimmish the ingredient's powerful results. We have <br /> develop an
+          dimmish the ingredient's powerful results. We have <br /> developed an
           innovative cold stirng method.
         </h1>
         <svg
