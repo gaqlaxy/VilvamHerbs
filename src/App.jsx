@@ -3,6 +3,7 @@ import Navbar from "./Components/Navbar";
 import HeroSection from "./Components/HeroSection";
 import FeaturedProducts from "./Components/FeaturedProducts";
 import ProductUpdate from "./Components/ProductUpdate";
+import Benefits from "./Components/Benefits";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <HeroSection />
       <FeaturedProducts />
       <ProductUpdate />
+      <Benefits />
     </>
   );
 }
