@@ -4,6 +4,9 @@ import HeroSection from "./Components/HeroSection";
 import FeaturedProducts from "./Components/FeaturedProducts";
 import ProductUpdate from "./Components/ProductUpdate";
 import Benefits from "./Components/Benefits";
+import LatestProducts from "./Components/LatestProducts";
+import HeroAdBanner1 from "./Components/HeroAdBanner1";
+import HeroAdBanner2 from "./Components/HeroAdBanner2";
 
 export default function App() {
   return (
@@ -12,7 +15,10 @@ export default function App() {
       <HeroSection />
       <FeaturedProducts />
       <ProductUpdate />
+      <LatestProducts />
+      <HeroAdBanner1 />
       <Benefits />
+      <HeroAdBanner2 />
     </>
   );
 }
