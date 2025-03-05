@@ -7,6 +7,7 @@ import Benefits from "./Components/Benefits";
 import LatestProducts from "./Components/LatestProducts";
 import HeroAdBanner1 from "./Components/HeroAdBanner1";
 import HeroAdBanner2 from "./Components/HeroAdBanner2";
+import Footer from "./Components/Footer";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
       <HeroAdBanner1 />
       <Benefits />
       <HeroAdBanner2 />
+      <Footer />
     </>
   );
 }
