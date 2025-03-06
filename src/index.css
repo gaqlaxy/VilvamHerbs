@@ -103,48 +103,48 @@
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
- }
+  }
   section {
     width: calc(min(76.5rem, 90%));
     margin-inline: auto;
     color: #111;
- }
+  }
   section h2 {
     text-transform: capitalize;
     letter-spacing: 0.025em;
     font-size: clamp(2rem, 2.5625rem, 2.6rem);
- }
+  }
   section a {
     display: inline-block;
     text-decoration: none;
- }
+  }
   section .product-container {
     margin-top: 5em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     gap: 2rem;
- }
- .card:nth-child(1) .iconBox {
+  }
+  .card:nth-child(1) .iconBox {
     background: #d3b19a;
- }
- .card:nth-child(2) .iconBox {
+  }
+  .card:nth-child(2) .iconBox {
     background: #70b3b1;
- }
+  }
   .card:nth-child(3) .iconBox {
     background: #d05fa2;
- }
- 
+  }
+
   .content {
     padding: 0.938rem 0.625rem;
- }
+  }
   .content h3 {
     text-transform: capitalize;
     font-size: clamp(1.5rem, 1.8273rem, 1.8rem);
- }
+  }
   .content p {
     margin: 0.625rem 0 1.25rem;
     color: #565656;
- }
+  }
   .card-inner {
     position: relative;
     width: inherit;
@@ -153,47 +153,48 @@
     border-radius: 1.25rem;
     border-bottom-right-radius: 0;
     overflow: hidden;
- }
+  }
   .box {
     width: 100%;
     height: 100%;
     background: #fff;
     border-radius: 1.25rem;
     overflow: hidden;
- }
+  }
   .imgBox {
     position: absolute;
     inset: 0;
- }
+  }
   .imgBox img {
     width: 100%;
     height: 100%;
     /* object-fit: cover; */
-      object-fit: cover;
- }
+    object-fit: cover;
+  }
   .icon {
     position: absolute;
     bottom: -0.375rem;
     right: -0.375rem;
     width: 6rem;
     height: 6rem;
-    background: #fff;
+    background-image: linear-gradient(-225deg, #fffeff 0%, #d7fffe 100%);
     border-top-left-radius: 50%;
- }
+  }
   .icon:hover .iconBox {
     transform: scale(1.1);
- }
+  }
   .icon::before {
     position: absolute;
     content: "";
     bottom: 0.375rem;
     left: -1.25rem;
     background: transparent;
+    /* background-image: linear-gradient(-225deg, #fffeff 0%, #d7fffe 100%); */
     width: 1.25rem;
     height: 1.25rem;
     border-bottom-right-radius: 1.25rem;
     box-shadow: 0.313rem 0.313rem 0 0.313rem #fff;
- }
+  }
   .icon::after {
     position: absolute;
     content: "";
@@ -204,7 +205,7 @@
     height: 1.25rem;
     border-bottom-right-radius: 1.25rem;
     box-shadow: 0.313rem 0.313rem 0 0.313rem #fff;
- }
+  }
   .iconBox {
     position: absolute;
     inset: 0.625rem;
@@ -214,9 +215,9 @@
     justify-content: center;
     align-items: center;
     transition: 0.3s;
- }
+  }
   .arrow {
     color: #fff;
     font-size: 1.5rem;
- }
+  }
 }

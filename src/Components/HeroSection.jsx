@@ -3,7 +3,7 @@ import React from "react";
 export default function HeroSection() {
   return (
     <>
-      <div className="h-full">
+      <div className="h-full w-full">
         <svg className="svg-defs" aria-hidden="true">
           <defs>
             <clipPath id="shapeVelyVely" clipPathUnits="userSpaceOnUse">
