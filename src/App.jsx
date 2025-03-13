@@ -8,6 +8,7 @@ import LatestProducts from "./Components/LatestProducts";
 import HeroAdBanner1 from "./Components/HeroAdBanner1";
 import HeroAdBanner2 from "./Components/HeroAdBanner2";
 import Footer from "./Components/Footer";
+import Testimonials from "./Components/Testimonials";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
       <HeroAdBanner1 />
       <Benefits />
       <HeroAdBanner2 />
+      <Testimonials />
       <Footer />
     </>
   );
