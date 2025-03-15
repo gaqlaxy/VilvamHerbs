@@ -1,64 +1,52 @@
-// import React from "react";
-
-// export default function Footer() {
-//   return (
-//     <>
-//       <footer className="mx-5 my-5 justify-around flex items-center">
-//         <div className="flex justify-center flex-col">
-//           <img src="vilvam.jpg" className="w-20 mx-5" alt="" />
-//           <p>
-//             Copyright &copy; 2025 Vilvam Herbs. <br /> All rights reserved
-//           </p>
-//         </div>
-//         <div>
-//           <ul className="flex flex-col gap-3">
-//             <li>Products</li>
-//             <li>Benefits</li>
-//             <li>About</li>
-//             <li>Pricing</li>
-//           </ul>
-//         </div>
-//         <div>
-//           <ul className="flex flex-col gap-3">
-//             <li>Best Sellers</li>
-//             <li>Vivlam Soap</li>
-//             <li>Facewash</li>
-//             <li>Chemical</li>
-//           </ul>
-//         </div>
-//         <div>
-//           <ul className="flex flex-col gap-3">
-//             <li>Support</li>
-//             <li>FAQs</li>
-//             <li>Get in Touch</li>
-//             <li>Privacy Policy</li>
-//           </ul>
-//         </div>
-//         <div>
-//           <ul>
-//             <li>Contact Us</li>
-//             <li>+91 1234567890</li>
-//             <li>Q3YkD@example.com</li>
-//           </ul>
-//         </div>
-//         <div>
-//           <ul>
-//             <li>Address</li>
-//             <li>123, 1st Floor, ABC Street</li>
-//             <li>XYZ City, State, Country</li>
-//             <li>Pincode: 123456</li>
-//           </ul>
-//         </div>
-//       </footer>
-//     </>
-//   );
-// }
 
 
-import React from 'react'
+import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 // components/Footer.jsx
 export default function Footer() {
+  const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [error, setError] = useState(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    // Clear previous messages
+    setError(null);
+    setIsSuccess(false);
+
+    // Simple validation
+    if (!email || !email.includes('@')) {
+      setError('Please enter a valid email address');
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      // Send email using EmailJS
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,  // Your service ID
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID, // Your template ID
+        { email }, // Template parameters
+        import.meta.env.VITE_EMAILJS_USER_ID // Your user ID
+      );
+
+      // Success handling
+      setIsSuccess(true);
+      setEmail('');
+      setTimeout(() => setIsSuccess(false), 5000); // Hide message after 5s
+    } catch (err) {
+      console.error('EmailJS Error:', err);
+      setError('Subscription failed. Please try again later.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <footer className="bg-gray-800 text-gray-300 mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -116,7 +104,7 @@ export default function Footer() {
           </div>
 
           {/* Newsletter */}
-          <div className="space-y-4">
+          {/* <div className="space-y-4">
             <h3 className="text-green-400 font-semibold mb-4">Newsletter</h3>
             <p className="text-sm">Subscribe to get updates about new products and special offers!</p>
             <form className="flex flex-col space-y-2">
@@ -132,7 +120,42 @@ export default function Footer() {
                 Subscribe
               </button>
             </form>
-          </div>
+          </div> */}
+           <div className="space-y-4">
+        <h3 className="text-green-400 font-semibold mb-4">Newsletter</h3>
+        
+        <form onSubmit={handleSubmit} className="flex flex-col space-y-2">
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Enter your email"
+            className="px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:border-green-400"
+            disabled={isSubmitting}
+            required
+          />
+          
+          <button
+            type="submit"
+            className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded transition-colors disabled:opacity-50"
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? 'Submitting...' : 'Subscribe'}
+          </button>
+        </form>
+
+        {/* Status Messages */}
+        {isSuccess && (
+          <p className="text-green-400 text-sm mt-2">
+            ✅ Success! Check your email for confirmation
+          </p>
+        )}
+        {error && (
+          <p className="text-red-400 text-sm mt-2">
+            ❌ {error}
+          </p>
+        )}
+      </div>
         </div>
 
         {/* Copyright Notice */}
