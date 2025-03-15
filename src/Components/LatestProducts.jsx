@@ -13,40 +13,7 @@ export default function LatestProducts() {
             cleaner and more youthful looking skin.
           </p>
         </div>
-        {/* <div>
-          <div className="grid grid-cols-4 gap-4 mx-12 my-12 relative">
-            <div className="card relative">
-              <img
-                src="https://images.unsplash.com/photo-1609175214983-594001465d18?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
-                className=" h-[18.75rem] w-[18.75rem] rounded-2xl"
-              />
-
-              <span class="material-symbols-outlined">arrow_outward</span>
-            </div>
-            <div className="card">
-              <img
-                src="https://images.unsplash.com/photo-1609175214983-594001465d18?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
-                className=" h-[18.75rem] w-[18.75rem] rounded-2xl"
-              />
-            </div>
-            <div className="card">
-              <img
-                src="https://images.unsplash.com/photo-1609175214983-594001465d18?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
-                className=" h-[18.75rem] w-[18.75rem] rounded-2xl"
-              />
-            </div>
-            <div className="card">
-              <img
-                src="https://images.unsplash.com/photo-1609175214983-594001465d18?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt=""
-                className=" h-[18.75rem] w-[18.75rem] rounded-2xl"
-              />
-            </div>
-          </div>
-        </div> */}
+    
 
         <div className="bestprod">
           <section>
