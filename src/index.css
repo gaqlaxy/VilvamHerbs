@@ -6,7 +6,8 @@
 
 @layer components {
   body {
-    background-image: linear-gradient(-225deg, #fffeff 0%, #d7fffe 100%);
+    /* background-image: linear-gradient(-225deg, #fffeff 0%, #d7fffe 100%); */
+    background-color: #d7fffe;
   }
   .nav-border {
     transition: color 0.3s;
@@ -177,7 +178,8 @@
     right: -0.375rem;
     width: 6rem;
     height: 6rem;
-    background-image: linear-gradient(-225deg, #fffeff 0%, #d7fffe 100%);
+    /* background-image: linear-gradient(-225deg, #fffeff 0%, #d7fffe 100%); */
+    background: #d7fffe;
     border-top-left-radius: 50%;
   }
   .icon:hover .iconBox {
@@ -193,7 +195,7 @@
     width: 1.25rem;
     height: 1.25rem;
     border-bottom-right-radius: 1.25rem;
-    box-shadow: 0.313rem 0.313rem 0 0.313rem #fff;
+    box-shadow: 0.313rem 0.313rem 0 0.313rem #d7fffe;
   }
   .icon::after {
     position: absolute;
@@ -204,7 +206,7 @@
     width: 1.25rem;
     height: 1.25rem;
     border-bottom-right-radius: 1.25rem;
-    box-shadow: 0.313rem 0.313rem 0 0.313rem #fff;
+    box-shadow: 0.313rem 0.313rem 0 0.313rem #d7fffe;
   }
   .iconBox {
     position: absolute;
