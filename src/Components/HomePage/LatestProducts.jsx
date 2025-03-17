@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import LatestProds from "../data/latestprods.json";
+import LatestProds from "../../data/latestprods.json";
 console.log(LatestProds);
 
 export default function LatestProducts() {
