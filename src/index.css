@@ -294,7 +294,9 @@
 }
 
 .testimonial-card-header h2:hover {
-    background: linear-gradient(90deg,#ff8a00,#e52e71);
+    /* background: linear-gradient(90deg,#ff8a00,#e52e71); */
+    background: #0e402d;
+    
     text-shadow: none;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;

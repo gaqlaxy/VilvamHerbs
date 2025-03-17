@@ -10,6 +10,7 @@ import HeroAdBanner2 from "./Components/HomePage/HeroAdBanner2";
 import Footer from "./Components/Footer";
 import Testimonials from "./Components/HomePage/Testimonials";
 import Contact from "./Pages/Contact";
+import CategoriesGrid from "./Components/HomePage/Categories";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
       <FeaturedProducts />
       <ProductUpdate />
       <LatestProducts />
+      <CategoriesGrid />
       <HeroAdBanner1 />
       <Benefits />
       <HeroAdBanner2 />
