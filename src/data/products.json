@@ -1,0 +1,55 @@
+
+{
+    "categories": [
+      {
+        "id": 1,
+        "title": "Herbal Skincare",
+        "slug": "herbal-skincare",
+        "description": "Natural skincare solutions using traditional herbal recipes",
+        "image": "/images/categories/skincare.jpg",
+        "meta": {
+          "seoDescription": "Discover our range of natural herbal skincare products for glowing, healthy skin",
+          "keywords": ["skincare", "natural beauty", "herbal cosmetics"]
+        },
+        "products": [
+          {
+            "id": "hs-001",
+            "name": "Aloe Vera Cooling Gel",
+            "slug": "aloe-vera-cooling-gel",
+            "price": 24.99,
+            "discount": 15,
+            "description": "100% pure organic aloe vera gel with neem extracts",
+            "features": [
+              "Soothes sunburns",
+              "Non-greasy formula",
+              "Vegan & cruelty-free"
+            ],
+            "specs": {
+              "volume": "200ml",
+              "ingredients": ["Aloe barbadensis leaf juice", "Azadirachta indica oil"],
+              "shelfLife": "24 months"
+            },
+            "images": [
+              "/images/products/aloe-gel-front.jpg",
+              "/images/products/aloe-gel-back.jpg"
+            ],
+            "stock": 50,
+            "rating": 4.8,
+            "tags": ["bestseller", "new"],
+            "variants": [
+              {
+                "sku": "AVCG-200",
+                "size": "200ml",
+                "price": 24.99
+              },
+              {
+                "sku": "AVCG-500",
+                "size": "500ml",
+                "price": 44.99
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
