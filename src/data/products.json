@@ -4,52 +4,38 @@
       {
         "id": 1,
         "title": "Herbal Skincare",
-        "slug": "herbal-skincare",
-        "description": "Natural skincare solutions using traditional herbal recipes",
-        "image": "/images/categories/skincare.jpg",
-        "meta": {
-          "seoDescription": "Discover our range of natural herbal skincare products for glowing, healthy skin",
-          "keywords": ["skincare", "natural beauty", "herbal cosmetics"]
-        },
-        "products": [
-          {
-            "id": "hs-001",
-            "name": "Aloe Vera Cooling Gel",
-            "slug": "aloe-vera-cooling-gel",
-            "price": 24.99,
-            "discount": 15,
-            "description": "100% pure organic aloe vera gel with neem extracts",
-            "features": [
-              "Soothes sunburns",
-              "Non-greasy formula",
-              "Vegan & cruelty-free"
-            ],
-            "specs": {
-              "volume": "200ml",
-              "ingredients": ["Aloe barbadensis leaf juice", "Azadirachta indica oil"],
-              "shelfLife": "24 months"
-            },
-            "images": [
-              "/images/products/aloe-gel-front.jpg",
-              "/images/products/aloe-gel-back.jpg"
-            ],
-            "stock": 50,
-            "rating": 4.8,
-            "tags": ["bestseller", "new"],
-            "variants": [
-              {
-                "sku": "AVCG-200",
-                "size": "200ml",
-                "price": 24.99
-              },
-              {
-                "sku": "AVCG-500",
-                "size": "500ml",
-                "price": 44.99
-              }
-            ]
-          }
-        ]
-      }
+        "image": "https://plus.unsplash.com/premium_photo-1674739375749-7efe56fc8bbb?q=80&w=1372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "colSpan": "md:col-span-2",
+        "rowSpan": "md:row-span-2",
+        "isMain": true
+      },
+      {
+        "id": 2,
+        "title": "Hair Care Essentials",
+        "image": "https://media.istockphoto.com/id/1345845425/photo/young-woman-hair-care-stock-photo.jpg?s=1024x1024&w=is&k=20&c=OGBBKBD-NAgzJrUTUYJkiHjootEkHWKnRXQVyyfR6Es=",
+        "colSpan": "md:col-span-1",
+        "rowSpan": "md:row-span-1"
+      },
+      {
+        "id": 3,
+        "title": "Ayurvedic Remedies",
+        "image": "https://images.unsplash.com/photo-1630623093190-166d69e55f41?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "colSpan": "md:col-span-1",
+        "rowSpan": "md:row-span-2"
+      },
+      {
+        "id": 4,
+        "title": "Organic Supplements",
+        "image": "https://plus.unsplash.com/premium_photo-1723299602300-ef7f6363299e?q=80&w=1503&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "colSpan": "md:col-span-1",
+        "rowSpan": "md:row-span-1"
+      },
+      {
+        "id": 5,
+        "title": "Natural Fragrances",
+        "image": "https://images.unsplash.com/photo-1624876991954-50fb623eb820?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "colSpan": "md:col-span-1",
+        "rowSpan": "md:row-span-1"
+    }
     ]
   }
