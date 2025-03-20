@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import LatestProds from "../../data/latestprods.json";
-console.log(LatestProds);
+// import LatestProds from "../../data/latestprods.json";
+// console.log(LatestProds);
 
 export default function LatestProducts() {
   return (
     <>
-      <div className="w-full h-full">
+      <div className="w-full h-full" name="bestproducts">
         <div className="flex justify-between items-center mx-12 my-5">
           <h1 className="text-4xl text-black font-bold">Our Best Products</h1>
           <p className="text-sm">

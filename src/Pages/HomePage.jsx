@@ -13,6 +13,7 @@ import CategoriesGrid from "../Components/HomePage/Categories";
 export default function HomePage() {
   return (
     <>
+    <div className="relative">
     <HeroSection />
       <FeaturedProducts />
       <ProductUpdate />
@@ -23,6 +24,7 @@ export default function HomePage() {
       <HeroAdBanner2 />
       <Testimonials />
       <Contact />
+      </div>
       </>
   )
 }
