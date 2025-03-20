@@ -2,7 +2,11 @@ import React from 'react'
 import { Link as ScrollLink } from 'react-scroll';
 
 
+
+
 export default function Navbar() {
+
+
   return (
     <>
     <nav className='font-rubik flex justify-around items-center mx-5 my-5'>
@@ -61,7 +65,7 @@ export default function Navbar() {
               to="contact"
               smooth={true}
               duration={500}
-              offset={-70}
+              offset={-50}
               className="border border-[#0e402d] tracking-wide text-lg px-3 py-2 font-medium rounded-2xl hover:bg-[#0e402d] hover:text-white transition-colors cursor-pointer"
               activeClass="text-green-700 font-bold"
             >

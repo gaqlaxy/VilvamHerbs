@@ -9,6 +9,7 @@ import HeroAdBanner2 from "../Components/HomePage/HeroAdBanner2";
 import Testimonials from "../Components/HomePage/Testimonials";
 import Contact from "../Pages/Contact";
 import CategoriesGrid from "../Components/HomePage/Categories";
+import ScrollToTop from "../Components/ScrollToTop";
 
 export default function HomePage() {
   return (
@@ -24,6 +25,8 @@ export default function HomePage() {
       <HeroAdBanner2 />
       <Testimonials />
       <Contact />
+      <ScrollToTop />
+
       </div>
       </>
   )
