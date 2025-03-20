@@ -1,16 +1,35 @@
 import React from 'react'
 import { Link as ScrollLink } from 'react-scroll';
 
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 
 
 
 export default function Navbar() {
+  const location = useLocation();
+  const handleScroll = (section) => {
+    if (location.pathname === '/') {
+      // Already on homepage - scroll to section
+      scroller.scrollTo(section, {
+        smooth: true,
+        offset: -70, // Adjust for header height
+        duration: 500
+      });
+    } else {
+      // Navigate to homepage then scroll
+      // First argument is the path, second is state
+      window.location.href = `/#${section}`;
+    }
+  };
 
 
   return (
     <>
     <nav className='font-rubik flex justify-around items-center mx-5 my-5'>
-        <img src="vilvam.jpg" alt="" className='w-20' />
+        {/* <img src="vilvam.jpg" alt="" className='w-20' /> */}
+        <RouterLink to="/" className="flex-shrink-0">
+            <img src="/vilvam.jpg" alt="Logo" className="w-20" />
+          </RouterLink>
         <ul className='flex items-center gap-12 '>
             {/* <li className='cursor-pointer hover:text-[#0e402d] transition-colors text-lg tracking-wide nav-border py-2 px-3 font-medium'>Home</li> */}
             <ScrollLink
