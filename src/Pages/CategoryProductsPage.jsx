@@ -6,6 +6,8 @@ import { categories } from "../data/categories.json";
 import { motion } from "framer-motion";
 
 import { useEffect } from "react";
+import { Scroll } from "lucide-react";
+import ScrollToTop from "../components/ScrollToTop";
 
 export default function CategoryProductsPage() {
   const { categoryId } = useParams();
@@ -23,6 +25,7 @@ export default function CategoryProductsPage() {
   );
 
   return (
+    <>
     <motion.div
       initial={{ y: 20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
@@ -52,5 +55,7 @@ export default function CategoryProductsPage() {
         </div>
       </div>
     </motion.div>
+    <ScrollToTop />
+    </>
   );
 }
