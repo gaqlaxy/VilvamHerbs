@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import HeroSection from "../Components/HomePage/HeroSection";
 import FeaturedProducts from "../Components/HomePage/FeaturedProducts";
 import ProductUpdate from "../Components/HomePage/ProductUpdate";
@@ -10,24 +10,38 @@ import Testimonials from "../Components/HomePage/Testimonials";
 import Contact from "../Pages/Contact";
 import CategoriesGrid from "../Components/HomePage/Categories";
 import ScrollToTop from "../Components/ScrollToTop";
+import { useEffect } from "react";
+import { scroller } from "react-scroll";
+import { useLocation } from "react-router-dom";
 
 export default function HomePage() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const section = location.hash.replace("#", "");
+      scroller.scrollTo(section, {
+        smooth: true,
+        offset: -70,
+        duration: 500,
+      });
+    }
+  }, [location.hash]);
   return (
     <>
-    <div className="relative">
-    <HeroSection />
-      <FeaturedProducts />
-      <ProductUpdate />
-      <LatestProducts />
-      <CategoriesGrid />
-      <HeroAdBanner1 />
-      <Benefits />
-      <HeroAdBanner2 />
-      <Testimonials />
-      <Contact />
-      <ScrollToTop />
-
+      <div className="relative">
+        <HeroSection />
+        <FeaturedProducts />
+        <ProductUpdate />
+        <LatestProducts />
+        <CategoriesGrid />
+        <HeroAdBanner1 />
+        <Benefits />
+        <HeroAdBanner2 />
+        <Testimonials />
+        <Contact />
+        <ScrollToTop />
       </div>
-      </>
-  )
+    </>
+  );
 }
