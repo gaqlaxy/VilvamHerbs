@@ -28,7 +28,7 @@ export default function LatestProducts() {
                     </div>
                     <div class="icon">
                       <a href="#" class="iconBox">
-                        <span class="material-symbols-outlined arrow">
+                        <span class="material-symbols-outlined arrow ">
                           arrow_outward
                         </span>
                       </a>

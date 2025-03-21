@@ -1,148 +1,3 @@
-// // -------------------
-
-// import React, { useState } from "react";
-// import { Link as RouterLink, useLocation } from "react-router-dom";
-// import { scroller } from "react-scroll";
-// import { motion, AnimatePresence } from "framer-motion";
-
-// export default function Navbar() {
-//   const location = useLocation();
-//   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-//   const handleScroll = (section) => {
-//     if (location.pathname === "/") {
-//       // Already on homepage - scroll to section
-//       scroller.scrollTo(section, {
-//         smooth: true,
-//         offset: -10, // Adjust for header height
-//         duration: 500,
-//       });
-//     } else {
-//       // Navigate to homepage then scroll
-//       // First argument is the path, second is state
-//       window.location.href = `/#${section}`;
-//     }
-//     setIsMenuOpen(false);
-//   };
-//   const menuItems = [
-//     { section: "hero", label: "Home" },
-//     { section: "products", label: "Best Sellers" },
-//     { section: "categories", label: "Categories" },
-//     { section: "about", label: "About" },
-//     { section: "contact", label: "Contact" },
-//   ];
-
-//   return (
-//     <>
-//       <nav className="font-rubik flex justify-around items-center mx-5 my-5 relative">
-//         {/* <img src="vilvam.jpg" alt="" className='w-20' /> */}
-//         <RouterLink to="/" className="flex-shrink-0">
-//           <img src="/vilvam.jpg" alt="Logo" className="w-20" />
-//         </RouterLink>
-//         <ul className="hidden md:flex items-center gap-12 ">
-//           {menuItems.slice(0, -1).map((item) => (
-//             <motion.li
-//               key={item.section}
-//               onClick={() => handleScroll(item.section)}
-//               whileHover={{ scale: 1.05 }}
-//               whileTap={{ scale: 0.95 }}
-//               className="cursor-pointer hover:text-[#0e402d] transition-colors text-lg tracking-wide nav-border py-2 px-3 font-medium"
-//             >
-//               {item.label}
-//             </motion.li>
-//           ))}
-//         </ul>
-
-//         {/* Mobile Menu Overlay */}
-//         <AnimatePresence>
-//           {isMenuOpen && (
-//             <motion.div
-//               initial={{ opacity: 0, y: -20 }}
-//               animate={{ opacity: 1, y: 0 }}
-//               exit={{ opacity: 0, y: -20 }}
-//               transition={{ duration: 0.3 }}
-//               className="md:hidden fixed inset-0 bg-white z-50 pt-20 px-5"
-//             >
-//               {/* Menu Content */}
-//               <ul className="flex flex-col gap-6">
-//                 {menuItems.map((item) => (
-//                   <motion.li
-//                     key={item.section}
-//                     initial={{ x: -20 }}
-//                     animate={{ x: 0 }}
-//                     onClick={() => handleScroll(item.section)}
-//                     className="cursor-pointer text-2xl hover:text-[#0e402d] transition-colors py-2 border-b border-gray-100"
-//                   >
-//                     {item.label}
-//                   </motion.li>
-//                 ))}
-//               </ul>
-//             </motion.div>
-//           )}
-//         </AnimatePresence>
-
-//         {/* Mobile Menu Button - Updated Z-index */}
-//         <motion.button
-//           whileTap={{ scale: 0.95 }}
-//           className="md:hidden p-2 z-[60] absolute top-5 right-5 transition-all" // Higher z-index than overlay
-//           onClick={() => setIsMenuOpen(!isMenuOpen)}
-//           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-//         >
-//           <svg
-//             className="w-8 h-8"
-//             fill="none"
-//             viewBox="0 0 24 24"
-//             stroke="#0e402d" // Ensure visible color
-//           >
-//             {isMenuOpen ? (
-//               <path
-//                 strokeLinecap="round"
-//                 strokeLinejoin="round"
-//                 strokeWidth={2}
-//                 d="M6 18L18 6M6 6l12 12"
-//               />
-//             ) : (
-//               <path
-//                 strokeLinecap="round"
-//                 strokeLinejoin="round"
-//                 strokeWidth={2}
-//                 d="M4 6h16M4 12h16M4 18h16"
-//               />
-//             )}
-//           </svg>
-//         </motion.button>
-
-//         <div className="hidden md:flex items-center gap-4">
-//           <motion.button
-//             onClick={() => handleScroll("contact")}
-//             whileHover={{ scale: 1.05 }}
-//             whileTap={{ scale: 0.95 }}
-//             className="border-2 border-[#0e402d] tracking-wide text-lg px-4 py-2 font-medium rounded-2xl hover:bg-[#0e402d] hover:text-white transition-colors"
-//           >
-//             Get in Touch
-//           </motion.button>
-
-//           <motion.svg
-//             whileHover={{ rotate: 45 }}
-//             whileTap={{ scale: 0.9 }}
-//             onClick={() => handleScroll("contact")}
-//             className="cursor-pointer p-2 border-2 border-[#0e402d] rounded-full"
-//             xmlns="http://www.w3.org/2000/svg"
-//             width="50"
-//             height="50"
-//           >
-//             <path
-//               stroke="#0e402d"
-//               strokeWidth="2"
-//               d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"
-//             />
-//           </motion.svg>
-//         </div>
-//       </nav>
-//     </>
-//   );
-// }
-
 import React, { useState, useRef, useEffect } from "react";
 import { Link as RouterLink, useLocation } from "react-router-dom";
 import { scroller } from "react-scroll";
@@ -294,7 +149,7 @@ export default function Navbar() {
       </motion.button>
 
       {/* Desktop Contact Section */}
-      <div className="hidden md:flex items-center gap-4">
+      <div className="hidden md:flex items-center gap-1">
         <motion.button
           onClick={() => handleScroll("contact")}
           whileHover={{ scale: 1.05 }}
@@ -307,7 +162,7 @@ export default function Navbar() {
           whileHover={{ rotate: 45 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => handleScroll("contact")}
-          className="cursor-pointer p-2 border-2 border-[#0e402d] rounded-full"
+          className="cursor-pointer px-[11px] py-[11px] border-2 border-[#0e402d] rounded-full"
           xmlns="http://www.w3.org/2000/svg"
           width="50"
           height="50"
