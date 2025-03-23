@@ -8,9 +8,16 @@
       "price": 22.99,
       "size": "50ml",
       "image": "https://media.istockphoto.com/id/1285407785/photo/ayurvedic-medicinal-turmeric-powder-with-root-and-azadirachta-indica-leaves-on-a-white.jpg?s=2048x2048&w=is&k=20&c=9FfW1jYTHIb5tbUBIdLLDhOrhT54QAB_7wWTKhXfSm8=",
-
-      "ingredients": ["Neem", "Turmeric", "Aloe Vera", "Sandalwood"],
-      "bestFor": ["Acne-prone skin", "Brightening"]
+      "ingredients": [
+        "Neem",
+        "Turmeric",
+        "Aloe Vera",
+        "Sandalwood"
+      ],
+      "bestFor": [
+        "Acne-prone skin",
+        "Brightening"
+      ]
     },
     {
       "categoryId": 1,
@@ -19,8 +26,15 @@
       "description": "Hydrates and reduces wrinkles with cold-pressed rosehip oil.",
       "price": 29.99,
       "size": "30ml",
-      "ingredients": ["Rosehip Oil", "Jojoba Oil", "Ashwagandha"],
-      "bestFor": ["Dry skin", "Anti-aging"],
+      "ingredients": [
+        "Rosehip Oil",
+        "Jojoba Oil",
+        "Ashwagandha"
+      ],
+      "bestFor": [
+        "Dry skin",
+        "Anti-aging"
+      ],
       "image": "https://media.istockphoto.com/id/1057259012/photo/a-bottle-of-rose-hip-seed-oil-with-rose-hips.jpg?s=1024x1024&w=is&k=20&c=qRVJGICPGWy3IDdIYuxGcAtY0v-1O4A5mXGiJyEXOZM="
     },
     {
@@ -30,8 +44,15 @@
       "description": "Promotes hair growth and reduces dandruff.",
       "price": 18.99,
       "size": "100ml",
-      "ingredients": ["Amla", "Bhringraj", "Coconut Oil"],
-      "bestFor": ["Hair growth", "Scalp health"],
+      "ingredients": [
+        "Amla",
+        "Bhringraj",
+        "Coconut Oil"
+      ],
+      "bestFor": [
+        "Hair growth",
+        "Scalp health"
+      ],
       "image": "https://media.istockphoto.com/id/2065697043/photo/gooseberry-oil.jpg?s=2048x2048&w=is&k=20&c=y4sXtgjeGvdSPhcQgJESX1u1v7QZH-PMI84qVOm6odg="
     },
     {
@@ -41,8 +62,15 @@
       "description": "Zero-waste shampoo for silky, strong hair.",
       "price": 12.99,
       "size": "80g",
-      "ingredients": ["Shikakai", "Reetha", "Hibiscus"],
-      "bestFor": ["Damaged hair", "Eco-friendly care"],
+      "ingredients": [
+        "Shikakai",
+        "Reetha",
+        "Hibiscus"
+      ],
+      "bestFor": [
+        "Damaged hair",
+        "Eco-friendly care"
+      ],
       "image": "https://media.istockphoto.com/id/2160212483/photo/close-up-of-organic-reetha-amla-and-shikakai-powder-with-its-fruits-in-white-ceramic-mortar.jpg?s=2048x2048&w=is&k=20&c=tlrHdv5ypz3bN6sqiR7fa4SzgccUXuExmhtzCGetOfI="
     },
     {
@@ -52,8 +80,15 @@
       "description": "Boosts immunity with tulsi, ginger, and ashwagandha.",
       "price": 15.99,
       "size": "200ml",
-      "ingredients": ["Tulsi", "Ginger", "Ashwagandha"],
-      "bestFor": ["Immunity", "Respiratory health"],
+      "ingredients": [
+        "Tulsi",
+        "Ginger",
+        "Ashwagandha"
+      ],
+      "bestFor": [
+        "Immunity",
+        "Respiratory health"
+      ],
       "image": "https://media.istockphoto.com/id/1245095474/photo/holy-basil-or-tulsi-leaves.jpg?s=1024x1024&w=is&k=20&c=7vIvK-FxKggtKHrTXgmfc137fUB7GvLTOvMwcF46474="
     },
     {
@@ -63,8 +98,15 @@
       "description": "Supports digestion and detoxification.",
       "price": 19.99,
       "size": "60 tablets",
-      "ingredients": ["Haritaki", "Bibhitaki", "Amalaki"],
-      "bestFor": ["Gut health", "Detox"],
+      "ingredients": [
+        "Haritaki",
+        "Bibhitaki",
+        "Amalaki"
+      ],
+      "bestFor": [
+        "Gut health",
+        "Detox"
+      ],
       "image": "https://media.istockphoto.com/id/1056367238/photo/triphala-capsules-and-powder-on-clay-plate-triphala-is-polyherbal-ayurvedic-medicine-of.jpg?s=2048x2048&w=is&k=20&c=FPSKGJKwz2CqP0iecL7SIQZTw8yRJNwhHM_M_fI8xfQ="
     },
     {
@@ -74,8 +116,14 @@
       "description": "Rich in vitamins and antioxidants.",
       "price": 24.99,
       "size": "90 capsules",
-      "ingredients": ["Organic Moringa", "Spirulina"],
-      "bestFor": ["Energy boost", "Nutrient deficiency"],
+      "ingredients": [
+        "Organic Moringa",
+        "Spirulina"
+      ],
+      "bestFor": [
+        "Energy boost",
+        "Nutrient deficiency"
+      ],
       "image": "https://media.istockphoto.com/id/1336503106/photo/ground-moringa-and-moringa-tea-on-rustic-table.jpg?s=2048x2048&w=is&k=20&c=8Tx0ASH1n9wQvogee3sTTuKlaGRh5aRtddWb02h2wGg="
     },
     {
@@ -85,8 +133,14 @@
       "description": "Anti-inflammatory and antioxidant support.",
       "price": 14.99,
       "size": "150g",
-      "ingredients": ["Organic Turmeric", "Black Pepper"],
-      "bestFor": ["Joint health", "Immunity"],
+      "ingredients": [
+        "Organic Turmeric",
+        "Black Pepper"
+      ],
+      "bestFor": [
+        "Joint health",
+        "Immunity"
+      ],
       "image": "https://media.istockphoto.com/id/1711953578/photo/turmeric-powder-and-roots.jpg?s=1024x1024&w=is&k=20&c=YmCzMHG7LnfC97vJz5VMy-s--gjZ-b-WMs70P4Z9yf0="
     },
     {
@@ -96,8 +150,14 @@
       "description": "Calming fragrance with no synthetic additives.",
       "price": 34.99,
       "size": "10ml",
-      "ingredients": ["Sandalwood Oil", "Jasmine Absolute"],
-      "bestFor": ["Stress relief", "Natural perfume"],
+      "ingredients": [
+        "Sandalwood Oil",
+        "Jasmine Absolute"
+      ],
+      "bestFor": [
+        "Stress relief",
+        "Natural perfume"
+      ],
       "image": "https://media.istockphoto.com/id/1090505662/photo/a-bottle-of-sandalwood-essential-oil-with-white-sandalwood.jpg?s=2048x2048&w=is&k=20&c=V5a_LsHZdCjRIeje6Ptu1s-HCNPNIq4nMgddOgUp2J0="
     },
     {
@@ -107,8 +167,15 @@
       "description": "Eco-friendly mosquito-repellent candle.",
       "price": 21.99,
       "size": "200g",
-      "ingredients": ["Soy Wax", "Lemongrass Oil", "Citronella"],
-      "bestFor": ["Aromatherapy", "Insect repellent"],
+      "ingredients": [
+        "Soy Wax",
+        "Lemongrass Oil",
+        "Citronella"
+      ],
+      "bestFor": [
+        "Aromatherapy",
+        "Insect repellent"
+      ],
       "image": "https://media.istockphoto.com/id/1503365014/photo/citronella-candle.jpg?s=2048x2048&w=is&k=20&c=HRFJ82IReDS2Qi4DRcAWopjfpXkoHSfoVtS4aqBQjnM="
     }
   ]
