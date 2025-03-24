@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { latprod } from "../data/products.json";
 import { motion } from "framer-motion";
-import ScrollToTop from "../components/ScrollToTop";
+// import ScrollToTop from "../components/ScrollToTop";
 
 export default function ProductPage() {
   // 1. Get product ID from URL
@@ -90,7 +90,7 @@ export default function ProductPage() {
           </div>
         </div>
       </motion.div>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
     </>
   );
 }

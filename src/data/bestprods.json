@@ -1,0 +1,28 @@
+{
+    "bestprods": [
+        {
+            "id": 1,
+            "name": "Rosehip Revitalizing Face Oil",
+            "image": "https://media.istockphoto.com/id/1057259012/photo/a-bottle-of-rose-hip-seed-oil-with-rose-hips.jpg?s=1024x1024&w=is&k=20&c=qRVJGICPGWy3IDdIYuxGcAtY0v-1O4A5mXGiJyEXOZM=",
+            "price": 15.99,
+            "rating": 4.5,
+            "category": "Hair Care Essentials"
+        },
+        {
+            "id": 2,
+            "name": "Amla & Bhringraj Hair Oil",
+            "image": "https://plus.unsplash.com/premium_photo-1684471006752-51c016b7b51c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "price": 15.99,
+            "rating": 4.5,
+            "category": "Hair Care Essentials"
+        },
+        {
+            "id": 3,
+            "name": "Shikakai Herbal Shampoo Bar",
+            "image": "https://images.unsplash.com/photo-1607006482735-31c122e8cd3d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "price": 15.99,
+            "rating": 4.5,
+            "category": "Hair Care Essentials"
+        }
+    ]
+}
