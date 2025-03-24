@@ -8,6 +8,8 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import HomePage from "./Pages/HomePage";
 import CategoryProductsPage from "./Pages/CategoryProductsPage";
+import ProductPage from "./Pages/ProductPage";
+
 
 export default function App() {
   return (
@@ -20,6 +22,10 @@ export default function App() {
             <Route
               path="/category/:categoryId"
               element={<CategoryProductsPage />}
+            />
+            <Route
+              path="/product/:productId"
+              element={<ProductPage />}
             />
           </Routes>
           <Footer />

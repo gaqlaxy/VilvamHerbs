@@ -56,7 +56,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center">
-              <img src="/vilvam.jpg" alt="Logo" className="h-10 w-10" />
+              <img src="/v1.png" alt="Logo" className="h-10 w-10" />
               <span className="ml-2 text-xl font-bold text-green-400">Vilvam Herbs</span>
             </div>
             <p className="text-sm">
@@ -103,24 +103,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Newsletter */}
-          {/* <div className="space-y-4">
-            <h3 className="text-green-400 font-semibold mb-4">Newsletter</h3>
-            <p className="text-sm">Subscribe to get updates about new products and special offers!</p>
-            <form className="flex flex-col space-y-2">
-              <input 
-                type="email" 
-                placeholder="Enter your email"
-                className="px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:border-green-400"
-              />
-              <button 
-                type="submit"
-                className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded transition-colors"
-              >
-                Subscribe
-              </button>
-            </form>
-          </div> */}
+          
            <div className="space-y-4">
         <h3 className="text-green-400 font-semibold mb-4">Newsletter</h3>
         
