@@ -3,7 +3,10 @@ import React from "react";
 export default function HeroSection() {
   return (
     <>
-      <div className="h-full w-full" name="hero">
+      <div
+        className="h-full w-full flex justify-center items-center"
+        name="hero"
+      >
         <svg className="svg-defs" aria-hidden="true">
           <defs>
             <clipPath id="shapeVelyVely" clipPathUnits="userSpaceOnUse">
