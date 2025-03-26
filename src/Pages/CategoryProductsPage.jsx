@@ -68,7 +68,7 @@ import { latprod } from "../data/products.json";
 import { categories } from "../data/categories.json";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-// import ScrollToTop from "../components/ScrollToTop";
+
 
 export default function CategoryProductsPage() {
   const { categoryId } = useParams();
@@ -163,7 +163,7 @@ export default function CategoryProductsPage() {
           </div>
         </div>
       </motion.div>
-      {/* <ScrollToTop /> */}
+      
     </>
   );
 }
