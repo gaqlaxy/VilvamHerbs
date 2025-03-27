@@ -1,9 +1,13 @@
 import { useParams, Link } from "react-router-dom";
 import { latprod } from "../data/products.json";
 import { motion } from "framer-motion";
+import { useCart } from "../context/CartContext"; // Add this import
+
 // import ScrollToTop from "../components/ScrollToTop";
 
 export default function ProductPage() {
+  const { addToCart } = useCart(); // Get addToCart function from context
+
   // 1. Get product ID from URL
   const { productId } = useParams();
 
@@ -84,7 +88,7 @@ export default function ProductPage() {
               </div>
             </div>
 
-            <button className="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700">
+            <button onClick={() => addToCart(product)} className="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700">
               Add to Cart
             </button>
           </div>
