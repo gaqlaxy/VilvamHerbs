@@ -3,7 +3,7 @@ import React from "react";
 export default function Testimonials() {
   return (
     <>
-      <div>
+      <div className="h-screen flex flex-col justify-center items-center">
         <h1 className="p-[3rem] text-4xl text-black font-bold text-center">
           Nature’s Love, Happy Customers – Hear Their Stories!
         </h1>

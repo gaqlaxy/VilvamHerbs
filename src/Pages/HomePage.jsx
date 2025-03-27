@@ -2,7 +2,7 @@ import React from "react";
 import HeroSection from "../Components/HomePage/HeroSection";
 import FeaturedProducts from "../Components/HomePage/FeaturedProducts";
 import ProductUpdate from "../Components/HomePage/ProductUpdate";
-import Benefits from "../Components/HomePage/Benefits";
+// import Benefits from "../Components/HomePage/Benefits";
 import LatestProducts from "../Components/HomePage/LatestProducts";
 import HeroAdBanner1 from "../Components/HomePage/HeroAdBanner1";
 
@@ -36,8 +36,8 @@ export default function HomePage() {
         <LatestProducts />
         <CategoriesGrid />
         <HeroAdBanner1 />
-        <Benefits />
-        
+        {/* <Benefits /> */}
+
         <Testimonials />
         <Contact />
         <ScrollToTop />

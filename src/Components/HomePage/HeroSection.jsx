@@ -58,8 +58,10 @@ export default function HeroSection() {
               >
                 <image
                   xlinkHref="//cdn.shopify.com/s/files/1/0028/7254/1229/files/main_1e0d7e35-77ff-4490-8a6f-c87a85802933_1600x.jpg?v=1561968642"
+                  // href="hero1.jpg"
                   style={{
                     maxWidth: "100%",
+                    // height: "100%",
                     width: "100%",
                     clipPath: "url('#shapeVelyVely')",
                   }}

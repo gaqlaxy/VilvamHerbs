@@ -177,6 +177,185 @@
         "Insect repellent"
       ],
       "image": "https://media.istockphoto.com/id/1503365014/photo/citronella-candle.jpg?s=2048x2048&w=is&k=20&c=HRFJ82IReDS2Qi4DRcAWopjfpXkoHSfoVtS4aqBQjnM="
+    },
+    {
+      "categoryId": 1,
+      "id": "SKIN003",
+      "name": "Aloe Vera Soothing Gel",
+      "description": "Calms irritated skin and provides intense hydration.",
+      "price": 17.99,
+      "size": "100ml",
+      "ingredients": [
+        "Organic Aloe Vera",
+        "Chamomile",
+        "Cucumber Extract"
+      ],
+      "bestFor": [
+        "Sensitive Skin",
+        "Sunburn Relief"
+      ],
+      "image": "https://images.unsplash.com/photo-1620916297394-9aae5c149653?auto=format&fit=crop&w=600"
+    },
+    {
+      "categoryId": 1,
+      "id": "SKIN004",
+      "name": "Saffron Brightening Mask",
+      "description": "Reduces pigmentation and evens skin tone.",
+      "price": 27.50,
+      "size": "50g",
+      "ingredients": [
+        "Saffron",
+        "Multani Mitti",
+        "Rose Water"
+      ],
+      "bestFor": [
+        "Dull Skin",
+        "Hyperpigmentation"
+      ],
+      "image": "https://images.unsplash.com/photo-1591348122449-8af78555a9d1?auto=format&fit=crop&w=600"
+    },
+    {
+      "categoryId": 1,
+      "id": "SKIN005",
+      "name": "Sandalwood Face Wash",
+      "description": "Deep cleanses while maintaining skin's natural moisture.",
+      "price": 14.99,
+      "size": "150ml",
+      "ingredients": [
+        "Sandalwood Powder",
+        "Neem",
+        "Turmeric"
+      ],
+      "bestFor": [
+        "Oily Skin",
+        "Pore Cleansing"
+      ],
+      "image": "https://images.unsplash.com/photo-1620749137010-2b5a3a1f3c1a?auto=format&fit=crop&w=600"
+    },
+    {
+      "categoryId": 1,
+      "id": "SKIN006",
+      "name": "Honey & Oat Scrub",
+      "description": "Gentle exfoliation for soft, glowing skin.",
+      "price": 19.99,
+      "size": "75g",
+      "ingredients": [
+        "Raw Honey",
+        "Oatmeal",
+        "Almond Powder"
+      ],
+      "bestFor": [
+        "Exfoliation",
+        "Dry Skin"
+      ],
+      "image": "https://images.unsplash.com/photo-1610549034401-19d8b2e1b447?auto=format&fit=crop&w=600"
+    },
+    {
+      "categoryId": 1,
+      "id": "SKIN007",
+      "name": "Kumkumadi Night Serum",
+      "description": "Ayurvedic anti-aging formula for overnight rejuvenation.",
+      "price": 39.99,
+      "size": "30ml",
+      "ingredients": [
+        "Saffron",
+        "Lotus",
+        "Indian Madder"
+      ],
+      "bestFor": [
+        "Anti-Aging",
+        "Night Care"
+      ],
+      "image": "https://images.unsplash.com/photo-1620916569024-0b6d0b7d5347?auto=format&fit=crop&w=600"
+    },
+    {
+      "categoryId": 2,
+      "id": "HAIR003",
+      "name": "Brahmi Hair Growth Serum",
+      "description": "Stimulates hair follicles for thicker growth.",
+      "price": 24.99,
+      "size": "60ml",
+      "ingredients": [
+        "Brahmi",
+        "Fenugreek",
+        "Rosemary Oil"
+      ],
+      "bestFor": [
+        "Thinning Hair",
+        "Hair Regrowth"
+      ],
+      "image": "https://images.unsplash.com/photo-1591348278863-a8fb3887e2aa?auto=format&fit=crop&w=600"
+    },
+    {
+      "categoryId": 2,
+      "id": "HAIR004",
+      "name": "Hibiscus Hair Mask",
+      "description": "Conditions and adds natural shine to hair.",
+      "price": 21.50,
+      "size": "200g",
+      "ingredients": [
+        "Hibiscus Flowers",
+        "Yogurt",
+        "Coconut Milk"
+      ],
+      "bestFor": [
+        "Dry Hair",
+        "Damage Repair"
+      ],
+      "image": "https://images.unsplash.com/photo-1620916427573-725e387a7c06?auto=format&fit=crop&w=600"
+    },
+    {
+      "categoryId": 3,
+      "id": "AYUR003",
+      "name": "Ashwagandha Stress Relief Tea",
+      "description": "Calms the mind and reduces anxiety naturally.",
+      "price": 12.99,
+      "size": "30 Tea Bags",
+      "ingredients": [
+        "Ashwagandha Root",
+        "Tulsi",
+        "Licorice"
+      ],
+      "bestFor": [
+        "Stress Relief",
+        "Better Sleep"
+      ],
+      "image": "https://images.unsplash.com/photo-1591348279047-86b9d3402985?auto=format&fit=crop&w=600"
+    },
+    {
+      "categoryId": 4,
+      "id": "SUPP003",
+      "name": "Wheatgrass Energy Powder",
+      "description": "Natural source of vitamins and chlorophyll.",
+      "price": 18.99,
+      "size": "200g",
+      "ingredients": [
+        "Organic Wheatgrass",
+        "Spirulina"
+      ],
+      "bestFor": [
+        "Detox",
+        "Energy Boost"
+      ],
+      "image": "https://images.unsplash.com/photo-1620916427573-725e387a7c06?auto=format&fit=crop&w=600"
+    },
+    {
+      "categoryId": 5,
+      "id": "FRAG003",
+      "name": "Lavender & Vanilla Room Mist",
+      "description": "Calming aroma for peaceful environments.",
+      "price": 26.99,
+      "size": "150ml",
+      "ingredients": [
+        "Lavender Oil",
+        "Vanilla Extract",
+        "Distilled Water"
+      ],
+      "bestFor": [
+        "Relaxation",
+        "Bedtime Use"
+      ],
+      "image": "https://images.unsplash.com/photo-1620916427573-725e387a7c06?auto=format&fit=crop&w=600"
     }
   ]
 }
