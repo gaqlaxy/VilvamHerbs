@@ -34,10 +34,11 @@ export default function CategoriesGrid() {
 
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white space-y-2">
                 <h3
-                  className={`font-bold ${
-                    category.isMain ? "text-3xl" : "text-xl"
-                  } 
-                  drop-shadow-md`}
+                  // className={`font-bold ${
+                  //   category.isMain ? "text-3xl" : "text-xl"
+                  // } 
+                  // drop-shadow-md`}
+                  className="font-bold text-xl drop-shadow-md"
                 >
                   {category.title}
                 </h3>

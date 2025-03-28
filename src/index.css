@@ -403,4 +403,11 @@
     background: #0e402d;
   }
 
+  .quantity-selector button {
+    transition: background-color 0.2s ease;
+  }
+  
+  .quantity-selector button:active {
+    transform: scale(0.95);
+  }
 }
