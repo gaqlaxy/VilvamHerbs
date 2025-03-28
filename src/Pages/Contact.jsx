@@ -1,13 +1,13 @@
 // components/Contact.jsx
-import { useState } from 'react';
-import emailjs from '@emailjs/browser';
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -16,23 +16,23 @@ export default function Contact() {
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
     setError(null); // Clear error when user modifies input
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     // Basic validation
     if (!formData.name || !formData.email || !formData.message) {
-      setError('Please fill in all required fields (Name, Email, Message)');
+      setError("Please fill in all required fields (Name, Email, Message)");
       return;
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
-      setError('Please enter a valid email address');
+      setError("Please enter a valid email address");
       return;
     }
 
@@ -48,11 +48,11 @@ export default function Contact() {
       );
 
       setIsSuccess(true);
-      setFormData({ name: '', email: '', phone: '', message: '' });
+      setFormData({ name: "", email: "", phone: "", message: "" });
       setTimeout(() => setIsSuccess(false), 5000);
     } catch (err) {
-      console.error('Contact Form Error:', err);
-      setError('Message failed to send. Please try again.');
+      console.error("Contact Form Error:", err);
+      setError("Message failed to send. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
@@ -62,7 +62,9 @@ export default function Contact() {
     <section id="contact" className="py-16 bg-[#d7fffe]" name="contact">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">Get in Touch</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+            Get in Touch
+          </h2>
           <p className="text-gray-600">Have questions? We're here to help!</p>
         </div>
 
@@ -70,7 +72,10 @@ export default function Contact() {
           <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-y-6">
             {/* Name Input */}
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-gray-700"
+              >
                 Name *
               </label>
               <input
@@ -86,7 +91,10 @@ export default function Contact() {
 
             {/* Email Input */}
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-gray-700"
+              >
                 Email *
               </label>
               <input
@@ -102,7 +110,10 @@ export default function Contact() {
 
             {/* Phone Input */}
             <div>
-              <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+              <label
+                htmlFor="phone"
+                className="block text-sm font-medium text-gray-700"
+              >
                 Phone (Optional)
               </label>
               <input
@@ -118,7 +129,10 @@ export default function Contact() {
 
             {/* Message Textarea */}
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+              <label
+                htmlFor="message"
+                className="block text-sm font-medium text-gray-700"
+              >
                 Message *
               </label>
               <textarea
@@ -139,7 +153,7 @@ export default function Contact() {
                 className="w-full bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-6 rounded-md transition-colors disabled:opacity-50"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? 'Sending...' : 'Send Message'}
+                {isSubmitting ? "Sending..." : "Send Message"}
               </button>
             </div>
 
@@ -149,7 +163,7 @@ export default function Contact() {
                 ⚠️ {error}
               </div>
             )}
-            
+
             {isSuccess && (
               <div className="text-green-600 text-sm text-center mt-4">
                 ✅ Message sent successfully! We'll respond within 24 hours.
