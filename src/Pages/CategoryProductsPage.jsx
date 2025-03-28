@@ -85,7 +85,7 @@ export default function CategoryProductsPage() {
     (product) => product.categoryId === Number(categoryId)
   );
 
-  if (!currentCategory) {
+  if (!currentCategory) { 
     return (
       <div className="text-center py-20">
         <h2 className="text-2xl font-bold">Category not found</h2>

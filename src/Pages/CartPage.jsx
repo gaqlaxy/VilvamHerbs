@@ -316,7 +316,7 @@ export default function CartPage() {
       className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8"
     >
       <h1 className="text-3xl font-bold text-[#0e402d] mb-8">
-        Your Ayurvedic Cart
+        Your Cart
       </h1>
 
       {cart.length === 0 ? (
