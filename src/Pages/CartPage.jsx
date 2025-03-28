@@ -31,8 +31,8 @@ export default function CartPage() {
           (item) => `
         • ${item.name}
         Quantity: ${item.quantity}
-        Price: $${item.price.toFixed(2)}
-        Subtotal: $${(item.price * item.quantity).toFixed(2)}
+        Price: &#8377;${item.price.toFixed(2)}
+        Subtotal: &#8377;${(item.price * item.quantity).toFixed(2)}
       `
         )
         .join("\n");
@@ -129,7 +129,7 @@ export default function CartPage() {
                     </button>
                   </div>
                   <p className="text-green-700 font-semibold">
-                    Subtotal: ${(item.price * item.quantity).toFixed(2)}
+                    Subtotal: &#8377;{(item.price * item.quantity).toFixed(2)}
                   </p>
                 </div>
               </motion.div>
@@ -193,7 +193,7 @@ export default function CartPage() {
                   Total ({totalItems} items):
                 </span>
                 <span className="text-2xl font-bold text-[#0e402d]">
-                  ${totalAmount.toFixed(2)}
+                &#8377;{totalAmount.toFixed(2)}
                 </span>
               </div>
 

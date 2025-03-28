@@ -5,7 +5,7 @@
       "id": "SKIN001",
       "name": "Neem & Turmeric Glow Cream",
       "description": "Fights acne and brightens skin with organic neem and turmeric.",
-      "price": 22.99,
+      "price": 99,
       "size": "50ml",
       "image": "https://media.istockphoto.com/id/1285407785/photo/ayurvedic-medicinal-turmeric-powder-with-root-and-azadirachta-indica-leaves-on-a-white.jpg?s=2048x2048&w=is&k=20&c=9FfW1jYTHIb5tbUBIdLLDhOrhT54QAB_7wWTKhXfSm8=",
       "ingredients": [
@@ -24,7 +24,7 @@
       "id": "SKIN002",
       "name": "Rosehip Revitalizing Face Oil",
       "description": "Hydrates and reduces wrinkles with cold-pressed rosehip oil.",
-      "price": 29.99,
+      "price": 120,
       "size": "30ml",
       "ingredients": [
         "Rosehip Oil",
@@ -42,7 +42,7 @@
       "id": "HAIR001",
       "name": "Amla & Bhringraj Hair Oil",
       "description": "Promotes hair growth and reduces dandruff.",
-      "price": 18.99,
+      "price": 350,
       "size": "100ml",
       "ingredients": [
         "Amla",
@@ -60,7 +60,7 @@
       "id": "HAIR002",
       "name": "Shikakai Herbal Shampoo Bar",
       "description": "Zero-waste shampoo for silky, strong hair.",
-      "price": 12.99,
+      "price": 100,
       "size": "80g",
       "ingredients": [
         "Shikakai",
@@ -78,7 +78,7 @@
       "id": "AYUR001",
       "name": "Tulsi Immunity Syrup",
       "description": "Boosts immunity with tulsi, ginger, and ashwagandha.",
-      "price": 15.99,
+      "price": 399,
       "size": "200ml",
       "ingredients": [
         "Tulsi",
@@ -96,7 +96,7 @@
       "id": "AYUR002",
       "name": "Triphala Digestive Tablets",
       "description": "Supports digestion and detoxification.",
-      "price": 19.99,
+      "price": 110,
       "size": "60 tablets",
       "ingredients": [
         "Haritaki",
@@ -114,7 +114,7 @@
       "id": "SUPP001",
       "name": "Moringa Energy Capsules",
       "description": "Rich in vitamins and antioxidants.",
-      "price": 24.99,
+      "price": 199,
       "size": "90 capsules",
       "ingredients": [
         "Organic Moringa",
@@ -131,7 +131,7 @@
       "id": "SUPP002",
       "name": "Turmeric Curcumin Powder",
       "description": "Anti-inflammatory and antioxidant support.",
-      "price": 14.99,
+      "price": 49,
       "size": "150g",
       "ingredients": [
         "Organic Turmeric",
@@ -148,7 +148,7 @@
       "id": "FRAG001",
       "name": "Sandalwood & Jasmine Perfume Oil",
       "description": "Calming fragrance with no synthetic additives.",
-      "price": 34.99,
+      "price": 50,
       "size": "10ml",
       "ingredients": [
         "Sandalwood Oil",
@@ -165,7 +165,7 @@
       "id": "FRAG002",
       "name": "Lemongrass Citronella Candle",
       "description": "Eco-friendly mosquito-repellent candle.",
-      "price": 21.99,
+      "price": 50,
       "size": "200g",
       "ingredients": [
         "Soy Wax",
@@ -183,7 +183,7 @@
       "id": "SKIN003",
       "name": "Aloe Vera Soothing Gel",
       "description": "Calms irritated skin and provides intense hydration.",
-      "price": 17.99,
+      "price": 399,
       "size": "100ml",
       "ingredients": [
         "Organic Aloe Vera",
@@ -194,14 +194,14 @@
         "Sensitive Skin",
         "Sunburn Relief"
       ],
-      "image": "https://images.unsplash.com/photo-1620916297394-9aae5c149653?auto=format&fit=crop&w=600"
+      "image": "https://media.istockphoto.com/id/878067638/photo/aloe-vera-juice-gel-moisturising-cream-soap-and-powder-powder.jpg?s=2048x2048&w=is&k=20&c=f80CU306H7zirZV2YXl9K0-B2s4u57U33Q7IPdl8Qkk="
     },
     {
       "categoryId": 1,
       "id": "SKIN004",
       "name": "Saffron Brightening Mask",
       "description": "Reduces pigmentation and evens skin tone.",
-      "price": 27.50,
+      "price": 100,
       "size": "50g",
       "ingredients": [
         "Saffron",
@@ -212,14 +212,14 @@
         "Dull Skin",
         "Hyperpigmentation"
       ],
-      "image": "https://images.unsplash.com/photo-1591348122449-8af78555a9d1?auto=format&fit=crop&w=600"
+      "image": "https://media.istockphoto.com/id/625996242/photo/crocus-flower-with-saffron-isolated-on-white-background.jpg?s=2048x2048&w=is&k=20&c=l8pmV-1hBBBdxR1-DbXPhSvn8N017CFJbzIU0KGQnJ8="
     },
     {
       "categoryId": 1,
       "id": "SKIN005",
       "name": "Sandalwood Face Wash",
       "description": "Deep cleanses while maintaining skin's natural moisture.",
-      "price": 14.99,
+      "price": 200,
       "size": "150ml",
       "ingredients": [
         "Sandalwood Powder",
@@ -230,14 +230,14 @@
         "Oily Skin",
         "Pore Cleansing"
       ],
-      "image": "https://images.unsplash.com/photo-1620749137010-2b5a3a1f3c1a?auto=format&fit=crop&w=600"
+      "image": "https://media.istockphoto.com/id/464688866/photo/beautification-product-of-sandalwood.jpg?s=1024x1024&w=is&k=20&c=Z7u2khemwbqM-tZ38x24N25m_3BsmsC8HNgMwwr8KSs="
     },
     {
       "categoryId": 1,
       "id": "SKIN006",
       "name": "Honey & Oat Scrub",
       "description": "Gentle exfoliation for soft, glowing skin.",
-      "price": 19.99,
+      "price": 89,
       "size": "75g",
       "ingredients": [
         "Raw Honey",
@@ -248,14 +248,14 @@
         "Exfoliation",
         "Dry Skin"
       ],
-      "image": "https://images.unsplash.com/photo-1610549034401-19d8b2e1b447?auto=format&fit=crop&w=600"
+      "image": "https://media.istockphoto.com/id/182459548/photo/spa-still-life-with-honey-and-sea-salt-scrub.jpg?s=1024x1024&w=is&k=20&c=X2BreyRDVg6ZPPhjVqkLgB6r9PbM55XUuL9jCxqpzAQ="
     },
     {
       "categoryId": 1,
       "id": "SKIN007",
       "name": "Kumkumadi Night Serum",
       "description": "Ayurvedic anti-aging formula for overnight rejuvenation.",
-      "price": 39.99,
+      "price": 59,
       "size": "30ml",
       "ingredients": [
         "Saffron",
@@ -266,14 +266,14 @@
         "Anti-Aging",
         "Night Care"
       ],
-      "image": "https://images.unsplash.com/photo-1620916569024-0b6d0b7d5347?auto=format&fit=crop&w=600"
+      "image": "https://media.istockphoto.com/id/1224568363/photo/blue-bottles-of-different-essential-oils-with-gemstones-on-white-background.jpg?s=1024x1024&w=is&k=20&c=52fx2QXdUJQLbfNGdQcxtjDuHnbf582Vk_s604he9GY="
     },
     {
       "categoryId": 2,
       "id": "HAIR003",
       "name": "Brahmi Hair Growth Serum",
       "description": "Stimulates hair follicles for thicker growth.",
-      "price": 24.99,
+      "price": 599,
       "size": "60ml",
       "ingredients": [
         "Brahmi",
@@ -291,7 +291,7 @@
       "id": "HAIR004",
       "name": "Hibiscus Hair Mask",
       "description": "Conditions and adds natural shine to hair.",
-      "price": 21.50,
+      "price": 500,
       "size": "200g",
       "ingredients": [
         "Hibiscus Flowers",
@@ -309,7 +309,7 @@
       "id": "AYUR003",
       "name": "Ashwagandha Stress Relief Tea",
       "description": "Calms the mind and reduces anxiety naturally.",
-      "price": 12.99,
+      "price": 200,
       "size": "30 Tea Bags",
       "ingredients": [
         "Ashwagandha Root",
@@ -327,7 +327,7 @@
       "id": "SUPP003",
       "name": "Wheatgrass Energy Powder",
       "description": "Natural source of vitamins and chlorophyll.",
-      "price": 18.99,
+      "price": 200,
       "size": "200g",
       "ingredients": [
         "Organic Wheatgrass",
@@ -344,7 +344,7 @@
       "id": "FRAG003",
       "name": "Lavender & Vanilla Room Mist",
       "description": "Calming aroma for peaceful environments.",
-      "price": 26.99,
+      "price": 399,
       "size": "150ml",
       "ingredients": [
         "Lavender Oil",

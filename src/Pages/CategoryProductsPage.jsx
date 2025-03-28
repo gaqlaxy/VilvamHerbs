@@ -144,7 +144,7 @@ export default function CategoryProductsPage() {
                       {product.name}
                     </h3>
                     <p className="text-green-700 font-bold text-lg mb-3">
-                      {product.price}
+                    &#8377;{product.price}
                     </p>
                     <div className="flex flex-wrap gap-2">
                       {product.bestFor.map((tag) => (

@@ -59,7 +59,7 @@ export default function ProductPage() {
 
             <div className="flex gap-2 items-center">
             <p className="text-green-700 text-2xl font-bold">
-              ${product.price}
+            &#8377;{product.price}
             </p>
               <p>[{product.size}]</p>
             </div>
