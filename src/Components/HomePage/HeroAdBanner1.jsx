@@ -28,7 +28,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#d7fffe] shadow-lg">
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#d7fffe] shadow-lg" name="about">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image Section */}
@@ -84,7 +84,7 @@ export default function AboutSection() {
                   className="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow"
                 >
                   <div className="mb-4">{feature.icon}</div>
-                  <h3 className="text-xl font-semibold text-[#0e402d] mb-2">
+                  <h3 className="text-lg font-semibold text-[#0e402d] mb-2">
                     {feature.title}
                   </h3>
                   <p className="text-gray-600">{feature.description}</p>
