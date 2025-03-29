@@ -216,12 +216,17 @@ import { Router, Link as RouterLink, useLocation } from "react-router-dom";
 import { scroller } from "react-scroll";
 import { motion, AnimatePresence } from "framer-motion";
 import { useCart } from "../context/CartContext";
+// import { useAuth } from "../context/AuthContext";
+// import AuthModal from "./AuthModal"; // Import your AuthModal component
+
 
 export default function Navbar() {
   const { cart } = useCart();
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef();
+  // const { user, logout } = useAuth();
+  // const [showAuthModal, setShowAuthModal] = useState(false);
 
   const handleScroll = (section) => {
     if (location.pathname === "/") {
@@ -271,7 +276,7 @@ export default function Navbar() {
             onClick={() => handleScroll(item.section)}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="cursor-pointer hover:text-[#0e402d] transition-colors text-lg tracking-wide nav-border py-2 px-3 font-medium"
+            className="cursor-pointer hover:text-[#0e402d] transition-colors text-[15px] tracking-wide nav-border py-2 px-3 font-medium"
           >
             {item.label}
           </motion.li>
@@ -337,17 +342,17 @@ export default function Navbar() {
           <motion.button
             variants={{ hover: { scale: 1.05 }, tap: { scale: 0.95 } }}
             onClick={() => handleScroll("contact")}
-            className="border-2 border-[#0e402d] tracking-wide text-lg px-4 py-2 font-medium rounded-2xl transition-colors group-hover:bg-[#0e402d] group-hover:text-white"
+            className="border-2 border-[#0e402d] tracking-wide text-[15px] px-4 py-2 font-medium rounded-2xl transition-colors group-hover:bg-[#0e402d] group-hover:text-white"
           >
             Get in Touch
           </motion.button>
           <motion.svg
             variants={{ hover: { rotate: 45 }, tap: { scale: 0.9 } }}
             onClick={() => handleScroll("contact")}
-            className="cursor-pointer px-[11px] py-[11px] border-2 border-[#0e402d] rounded-full"
+            className="cursor-pointer px-[6px] py-[6px] border-2 border-[#0e402d] rounded-full"
             xmlns="http://www.w3.org/2000/svg"
-            width="50"
-            height="50"
+            width="40"
+            height="40"
           >
             <path
               stroke="#0e402d"
@@ -360,7 +365,7 @@ export default function Navbar() {
         <div className="hidden md:block">
           <RouterLink
             to="/cart"
-            className="flex items-center gap-2 text-gray-700 hover:text-green-600"
+            className="flex items-center gap-2 text-gray-700 hover:text-[#0e402d]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -442,6 +447,30 @@ export default function Navbar() {
           </div>
         )}
       </AnimatePresence>
+      {/* <div className="flex items-center gap-4">
+        {user ? (
+          <div className="flex items-center gap-2">
+            <span>Welcome, {user.email}</span>
+            <button 
+              onClick={logout}
+              className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+            >
+              Logout
+            </button>
+          </div>
+        ) : (
+          <button
+            onClick={() => setShowAuthModal(true)}
+            className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"
+          >
+            Login
+          </button>
+        )}
+      </div>
+
+      {showAuthModal && (
+        <AuthModal onClose={() => setShowAuthModal(false)} />
+      )} */}
     </nav>
   );
 }

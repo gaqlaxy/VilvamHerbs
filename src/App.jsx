@@ -11,11 +11,15 @@ import HomePage from "./Pages/HomePage";
 import CategoryProductsPage from "./Pages/CategoryProductsPage";
 import ProductPage from "./Pages/ProductPage";
 import CartPage from "./Pages/CartPage";
+// import { AuthProvider } from "./context/AuthContext";
+
 
 
 export default function App() {
   return (
     <>
+        {/* <AuthProvider> Enable this for authentication  */}
+
       <CartProvider> {/* Add CartProvider here */}
       <AnimatePresence mode="wait">
         <Router>
@@ -37,6 +41,8 @@ export default function App() {
         </Router>
       </AnimatePresence>
       </CartProvider> {/* Add CartProvider here */}
+      {/* </AuthProvider> */}
+
     </>
   );
 }
