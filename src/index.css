@@ -250,9 +250,7 @@
     color: #fff;
     font-size: 1.5rem;
     transition: 0.3s;
-    
   }
-  
 
   /* Testimonials  */
   .testimonial-card-list {
@@ -406,14 +404,22 @@
   .quantity-selector button {
     transition: background-color 0.2s ease;
   }
-  
+
   .quantity-selector button:active {
     transform: scale(0.95);
   }
 
-
-
-
-
-  
+  @media (max-width: 767px) {
+    .pos-absolute {
+      display: none;
+    }
+    .posabs {
+      max-width: 100%;
+    }
+  }
+  @media (max-width: 767px) {
+    .text {
+      font-size: 40px;
+    }
+  }
 }
