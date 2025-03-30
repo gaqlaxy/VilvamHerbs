@@ -242,7 +242,7 @@ export default function HeroSection() {
       </div>
 
       {/* Mobile Version */}
-      <div className="md:hidden h-full w-full relative">
+      <div className="md:hidden h-screen w-full relative">
         <img
           src="//cdn.shopify.com/s/files/1/0028/7254/1229/files/main_1e0d7e35-77ff-4490-8a6f-c87a85802933_1600x.jpg"
           alt="Vilvam Herbs"
