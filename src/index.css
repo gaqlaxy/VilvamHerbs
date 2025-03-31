@@ -422,4 +422,10 @@
       font-size: 40px;
     }
   }
+
+  @media (max-width: 767px) {
+    .menu-icon{
+      stroke: #48bb78;
+    }
+  }
 }

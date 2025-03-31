@@ -166,6 +166,7 @@
 // }
 
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
@@ -242,7 +243,7 @@ export default function HeroSection() {
       </div>
 
       {/* Mobile Version */}
-      <div className="md:hidden h-screen w-full relative">
+      {/* <div className="md:hidden h-screen w-full relative">
         <img
           src="//cdn.shopify.com/s/files/1/0028/7254/1229/files/main_1e0d7e35-77ff-4490-8a6f-c87a85802933_1600x.jpg"
           alt="Vilvam Herbs"
@@ -254,6 +255,46 @@ export default function HeroSection() {
             <br />
             True Purity
           </h1>
+        </div>
+      </div> */}
+
+      {/* updated  */}
+      <div className="md:hidden h-[90vh] w-full relative overflow-hidden">
+        {/* Background Image Container */}
+        <div className="absolute inset-0 h-full w-full">
+          <motion.img
+            src="//cdn.shopify.com/s/files/1/0028/7254/1229/files/main_1e0d7e35-77ff-4490-8a6f-c87a85802933_1600x.jpg"
+            alt="Vilvam Herbs"
+            className="h-full w-full object-cover"
+            initial={{ scale: 1.1 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/50" />
+        </div>
+
+        {/* Content Overlay */}
+        <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+            className="space-y-6"
+          >
+            <h1 className="text-5xl font-rubik font-bold text-white leading-tight">
+              <span className="block mb-4">Experience</span>
+              <span className="block text-3xl font-medium border-t-2 border-white/40 pt-4">
+                True Purity
+              </span>
+            </h1>
+            
+            <motion.button
+              whileTap={{ scale: 0.95 }}
+              className="bg-white/90 backdrop-blur-sm px-8 py-3 rounded-full text-[#0e402d] font-medium mt-8 shadow-lg"
+            >
+              Explore Products
+            </motion.button>
+          </motion.div>
         </div>
       </div>
     </div>
