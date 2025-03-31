@@ -260,7 +260,7 @@ export default function HeroSection() {
 
       {/* updated  */}
       <div className="md:hidden h-[90vh] w-full relative overflow-hidden">
-        {/* Background Image Container */}
+        
         <div className="absolute inset-0 h-full w-full">
           <motion.img
             src="//cdn.shopify.com/s/files/1/0028/7254/1229/files/main_1e0d7e35-77ff-4490-8a6f-c87a85802933_1600x.jpg"
@@ -273,7 +273,7 @@ export default function HeroSection() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/50" />
         </div>
 
-        {/* Content Overlay */}
+        
         <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
