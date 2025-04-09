@@ -210,7 +210,6 @@
 //   );
 // }
 
-
 import React, { useState, useRef, useEffect } from "react";
 import { Router, Link as RouterLink, useLocation } from "react-router-dom";
 import { scroller } from "react-scroll";
@@ -218,7 +217,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useCart } from "../context/CartContext";
 // import { useAuth } from "../context/AuthContext";
 // import AuthModal from "./AuthModal"; // Import your AuthModal component
-
 
 export default function Navbar() {
   const { cart } = useCart();
@@ -249,8 +247,7 @@ export default function Navbar() {
     };
 
     document.addEventListener("mousedown", handleClickOutside);
-    return () =>
-      document.removeEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   const menuItems = [
@@ -265,7 +262,7 @@ export default function Navbar() {
     <nav className="font-rubik flex justify-between items-center mx-5 my-5 md:justify-around relative">
       {/* Logo */}
       <RouterLink to="/" className="flex-shrink-0 z-50">
-        <img src="/v1.png" alt="Logo" className="w-20" />
+        <img src="/logotrans.png" alt="Logo" className="w-24" />
       </RouterLink>
 
       {/* Desktop Navigation */}
